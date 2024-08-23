@@ -1,0 +1,505 @@
+    /* Reset css */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .clear {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .col2 {
+        float: left;
+        width: 50%;
+        text-align: left;
+    }
+
+    .col3 {
+        float: left;
+        width: calc(100%/3);
+        text-align: left;
+    }
+
+
+
+
+
+    #header {
+        height: 46px;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1; /*Fix header mất khi kéo xuống */
+
+    }
+
+    #header .more-box{
+        display: inline-block;
+    }
+
+    #header .box{
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+
+    #header .box > a {
+        color: #fff;
+        text-decoration: none; /*Bỏ gạch chân*/
+        line-height: 46px;
+        padding: 0 24px;
+        display: block;
+        text-transform: uppercase;
+    }
+
+    #header .box5 i {
+        font-size: 10px;
+    }
+
+    #header .box5 .more_box5 {
+        position: absolute;
+        list-style-type: none; /* Bỏ dấu chấm cạnh list*/
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+        display: none;
+        min-width: 160px;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    #header .box5:hover .more_box5{
+        display: block;
+    }
+
+    #header .box:hover > a,
+    #header .box .more_box5 li:hover a,
+    #content .sent-contact:hover,
+    #content .tour-place a:hover,
+    .modal .modal-close:hover,
+    .modal .modal-pay:hover,
+    .modal .modal-footer .button-close:hover {
+        color: black;
+        background-color: #ccc;
+        cursor: pointer;
+    }
+
+    #header .box .more_box5 li a{
+        background-color: white;
+        color: black;
+        text-decoration: none; /*Bỏ gạch chân*/
+        line-height: 46px;
+        padding: 0 16px;
+        display: block;
+
+    }
+    #header .mobile-menu {
+        float: right;
+        line-height: 46px;
+        cursor: pointer;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #header .search {
+        float: right;
+        line-height: 46px;
+        cursor: pointer;
+    }
+
+
+    #header .mobile-menu i,
+    #header .search i {
+        color: white;
+        padding: 0 24px;
+    }
+
+    #header .search:hover {
+        background-color: red;
+    }
+    #header .mobile-menu:hover{
+        background-color: #ccc;
+    }
+    #header .mobile-menu:hover i{
+        color: black;
+    }
+
+
+
+
+    #slider {
+        background-color: #333;
+        margin-top: 46px;
+        padding-top: 50%;
+        background: url(https://www.w3schools.com/w3images/chicago.jpg) top center / cover no-repeat;
+        position: relative;
+    }
+
+    #slider h2{
+        color: white;
+        /* text-align: center; Căn giữa chữ */
+        position: absolute;
+        bottom: 85px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+    }
+    #slider p {
+        color: white;
+        text-align: center; 
+        position: absolute;
+        bottom: 47px;
+        font-size: 15px;
+        width: 100%;
+        text-shadow: 1px 1px 2px black;
+
+    }
+
+
+    #content .member {
+        padding: 32px;
+    }
+
+    #content .heading-content {
+        width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 64px 16px;
+        text-align: center;
+    }
+
+    #content .heading-content > h1 {
+        text-transform: uppercase; /* Viết in hoa */
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500; /*Độ đậm của chữ*/ 
+        letter-spacing: 4px; /* Khoảng cách giữa các chữ*/
+    }
+
+    #content .heading-content .p1 {
+        font-size: 15px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        font-style: italic; /* Viết in nghiêng*/
+        opacity: 0.7; /* Độ trong suôt*/
+    }
+
+    #content .heading-content .about-band {
+        font-size: 15px;
+        margin-top: 25px;
+        text-align: justify; /* căn đều text 2 đầu */
+        line-height: 1.4 ; /* Chỉnh độ cao 2 dòng cho nó ở giữa ô */
+
+    }
+
+
+    #content .band .name {
+        text-align: center;
+    }
+
+    #content .band .name .img-member {
+        margin-top: 15px ;  
+        width: 154px;
+        border-radius: 4px; /* bo góc thành hình tròn*/
+    }
+
+    #content .tour > h1,
+    #content .tour > p {
+        color: white;
+    }
+    #content .tour-color {
+        background-color: black;
+
+    }
+
+    #content .tour .ticket {
+        background-color: white;
+        list-style-type: none; /* Bỏ dấu chấm cạnh list*/
+        text-align: left;
+        padding-left: 0;
+    }
+
+    #content .ticket li {
+        font-size: 15px;
+        padding: 13px 16px;
+        border-bottom: 1px solid #ddd;
+        color: #757575;
+    }
+
+    #content .ticket .Sold-out {
+        background-color:  #f44336;
+        color: white;
+        padding: 4px 6px;
+        margin-left: 16px;
+
+    }
+
+    #content .ticket .soluong {
+        width: 24px;
+        height: 24px;
+        float: right;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 24px;
+        color: white;
+        font-size: 20px;
+        background-color: #333;
+    }
+
+    #content .tour-place {
+        max-width: none;
+        margin: 0 -8px;
+        padding: 32px 0;
+
+    }
+
+    #content .tour-place1 {
+        padding: 0 8px;
+    }
+
+    #content .tour-place2 {
+        background-color: white;
+        padding: 16px;
+        text-align: left; /* Đảm bảo căn lề trái tất cả các thẻ trong div */
+
+    }
+
+    #content .tour-place1 img {
+        width: 100%;
+        display: block;
+    }
+
+    #content .tour-place1 img:hover {
+        opacity: 0.6;
+    }
+
+    #content .tour-place2 .tour-place-date {
+        color: #ccc;
+    }
+
+    #content .tour-place2 h3 {
+        font-size: 15px ;
+        font-weight: 600;
+        font-family: 'Lato', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #content .tour-place2 .tour-place-date {
+        padding-top: 15px;  
+    }
+
+    #content .tour-place2 .tour-plance-text {
+        padding: 15px 0;  
+    }
+
+
+    #content .tour-place2 a {
+        width: 108px;
+        height: 38px;
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        padding: 8px 16px;
+        display: inline-block;
+        font-size: 15px ;    
+    }
+
+    #content .cotact {
+    }
+
+
+    #content .contact-content {
+        padding: 32px 0 ;
+    }
+
+    #content .contact-content1 i,
+    #content .contact-content1 p {
+        margin: 10px;
+        font-weight: 500;
+        font-size: 15px; 
+    }
+
+    #content .contact-content2 {   
+    }
+
+    #content .contact-content2 input {
+        padding: 12px;
+        border: 0.8px solid black;
+        width: 100%;
+        color: black; /* Màu chữ đậm hơn */
+
+    }
+
+    #content .contact-content2 .contact-content2-1 {
+        display: flex;
+        width: 100%;
+
+    }
+
+    #content .contact-content2 .contact-input-name{
+        width: 100%;
+        margin: 0 15px 15px 0;
+    }
+
+    #content .contact-content2 .contact-input-email {
+        width: 100%;
+        margin: 0 0 15px 15px;
+    }
+
+    #content .sent-contact {
+        margin: 16px 0;
+        padding: 10px 16px;
+        text-align: center;
+        font-size: 15px;
+        border: 0px solid #333;
+        background-color: black;
+        color: white;
+        float: right;
+    }
+    #content .img-map img {
+    }
+
+
+    #footer {
+        text-align: center;
+        padding: 64px;
+        font-size: 15px;
+    }
+
+    #footer i {
+        font-size: 22px;
+        color: #757575; 
+    }
+
+    #footer i:hover {
+        opacity: 0.6;
+    }
+
+    #footer p,a {
+        font-size: 15px;
+        color: #757575;
+    }
+
+
+
+
+
+
+    .modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        align-items: center; /* Nằm giữa theo chiều ngang*/
+        justify-content: center; /* Nằm giữa theo chiều dọc*/
+    }
+
+    .modal .modal-content {
+        background-color: white;
+        width: 900px;
+        min-height: 400px;
+        position: relative;
+        margin-top: 70px;
+    }
+
+    .modal .modal-header {
+        display: block; /* Hoặc display: initial; */
+        flex-shrink: 1; /* Giá trị mặc định là 1 */
+        align-items: normal; /* Hoặc align-items: stretch; */
+        padding: 0;
+        border-bottom: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        
+    }
+
+    .modal .modal-top {
+        background-color: #009688;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        padding: 42px 32px;
+        font-weight: 500;
+        letter-spacing: 4px;
+    }
+
+    .modal .modal-close {
+        font-size: 15px;
+        padding: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+    }
+
+    .modal .modal-center {
+    }
+
+    .modal .modal-center input {
+        display: block;
+
+    }
+
+    .modal .modal-user {
+        margin: 15px;
+        font-weight: bold; /* Làm chữ đậm */
+
+    }
+
+    .modal .modal-password {
+        margin: 15px;
+        font-weight: bold; /* Làm chữ đậm */
+
+    }
+
+    .modal input {
+        padding: 11px   ;
+        border: 1px solid #ccc;
+        width: 100%;
+        font-size: 15px;
+    }
+    .modal .modal-pay {
+        width: calc(100% - 30px);
+        margin: 15px;
+        padding: 15px;
+        border: none;
+        font-style: 15px; 
+        background-color: #009688;
+        color: #fff;
+        display: block;
+    }
+
+    .modal .modal-footer i {
+        font-size: 8px;
+        line-height: 8px;
+        font-weight: bold; /*Viết in đạm*/
+    }
+
+    .modal .modal-footer .button-close {
+        margin: 15px;
+        border: none;
+        background-color: red;
+        color: #fff;
+        font-weight: bold;
+        padding: 8px 16px;
+    }
+
+    .modal .modal-footer .modal-help {
+        font-size: 15px;
+        padding: 15px; 
+        float: right;
+        font-weight: 500;
+    }
+
+/*create file fontsize 15px */
+    

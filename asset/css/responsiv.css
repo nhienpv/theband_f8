@@ -1,0 +1,97 @@
+/* PC 1024 */
+/* Tablet 740 1024 */
+@media (min-width: 740px) and (max-width :1024px) {
+    #content .tour .ticket {
+        margin: 0 15px;
+    }
+    #content .tour-place {
+        margin: 0px 8px;
+    }
+    #content .contact-content2 {
+        padding-right: 10px;
+    }
+}
+/* Mobile 740 */
+@media (max-width: 739px) {
+    .col3-mobile {
+    width: 100% !important;
+    text-align: center;
+    } 
+
+
+    #header {
+        overflow: hidden;
+    }
+    #header .box {
+        display: block;
+    }
+    #header .search {
+        display: none;
+    }
+    #header .mobile-menu {
+        display: block;
+    }
+
+    #header .more-box{
+        display: block;
+    }
+
+    #header .box:first-child {
+        display: inline-block;
+    }
+
+    #header .box5 .more_box5 {
+        position: inherit;
+    }
+    #header .box .more_box5 li a {
+        background-color: #333;
+        color: white;
+        padding-top: 10px;
+        padding-left: 40px;
+        line-height: 46px;
+    }
+
+    #content .band .name:nth-child(3) .img-member {
+        margin-bottom: 0px; 
+    }
+
+    #content .band .name .img-member {
+        width: 70%;
+        margin-bottom: 15px;
+        margin-top: 0px;
+    }
+
+    
+    #content .tour .ticket {
+        margin: 0px 15px;
+    }
+
+    #content .tour-place {
+        margin: unset;
+ 
+    }
+
+    #content .tour-place1 {
+        padding: 0px 16px;
+        padding-bottom: 15px;
+    }
+    
+    #content .contact-content1 {
+        text-align: left;
+        margin-bottom: 32px;
+    }
+    #content .contact-content2 {
+        padding:0 16px;
+    }
+
+    #content .contact-content2 .contact-content2-1 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #content .contact-content2 .contact-input-email {
+        margin: 0 0 15px 0;
+    } 
+
+}
